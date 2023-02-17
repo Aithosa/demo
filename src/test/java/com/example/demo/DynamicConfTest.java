@@ -9,6 +9,8 @@ public class DynamicConfTest extends DemoApplicationTests {
     @Test
     public void test() {
         log.info("app.id={}", Config.getAppId());
+        log.info("app.id1={}", Config.getAppId1());
+
         log.info("conf.enable={}", Config.getConfEnable());
         log.info("connect.num={}", Config.getConnectNum());
     }

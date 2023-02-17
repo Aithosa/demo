@@ -1,6 +1,7 @@
 package com.example.demo.config;
 
 import com.example.demo.utils.ConfigUtils;
+import com.netflix.config.DynamicProperty;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,10 @@ import lombok.NoArgsConstructor;
 public class Config {
     public static String getAppId() {
         return ConfigUtils.getConfigWithDefaultValue("app.id", "id");
+    }
+
+    public static String getAppId1() {
+        return ConfigUtils.getStringConfig("app.id");
     }
 
     public static Boolean getConfEnable() {
